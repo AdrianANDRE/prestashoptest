@@ -24,3 +24,4 @@ Check no accountLink
     Element Should Be Visible    ${loginLocator}[noAccountLink]
 Click button Connexion
     Click Button    ${loginLocator}[buttonConnexion]
+

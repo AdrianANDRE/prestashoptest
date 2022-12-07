@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20221206 13:54:10.692" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20221207 08:33:55.028" rpa="false" schemaversion="3">
 <suite id="s1" name="Test De Connexion Et Déconnexion Ko" source="c:\Users\aandre\Desktop\trainPrestashop\tests\connectdisconnect\test de connexion et déconnexion ko.robot">
 <test id="s1-t1" name="Test de connexion et déconnexion KO" line="23">
 <kw name="Test Setup" type="SETUP">
@@ -7,15 +7,15 @@
 <var>${__TEST_SETUP}</var>
 <arg>${TEST SETUP}</arg>
 <doc>Returns variable value or ``default`` if the variable does not exist.</doc>
-<msg timestamp="20221206 13:54:11.164" level="INFO">${__TEST_SETUP} = Setup</msg>
-<status status="PASS" starttime="20221206 13:54:11.163" endtime="20221206 13:54:11.165"/>
+<msg timestamp="20221207 08:33:56.518" level="INFO">${__TEST_SETUP} = Setup</msg>
+<status status="PASS" starttime="20221207 08:33:56.517" endtime="20221207 08:33:56.518"/>
 </kw>
 <kw name="Get Variable Value" library="BuiltIn">
 <var>${__TEST_2_SETUP}</var>
 <arg>${TEST 2 SETUP}</arg>
 <doc>Returns variable value or ``default`` if the variable does not exist.</doc>
-<msg timestamp="20221206 13:54:11.167" level="INFO">${__TEST_2_SETUP} = None</msg>
-<status status="PASS" starttime="20221206 13:54:11.165" endtime="20221206 13:54:11.167"/>
+<msg timestamp="20221207 08:33:56.521" level="INFO">${__TEST_2_SETUP} = None</msg>
+<status status="PASS" starttime="20221207 08:33:56.519" endtime="20221207 08:33:56.521"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>$__TEST_SETUP is not None</arg>
@@ -25,90 +25,90 @@
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>2 seconds</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20221206 13:54:11.173" endtime="20221206 13:54:11.174"/>
+<status status="PASS" starttime="20221207 08:33:56.527" endtime="20221207 08:33:56.528"/>
 </kw>
 <kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <arg>logScreenshot</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20221206 13:54:11.175" endtime="20221206 13:54:11.175"/>
+<status status="PASS" starttime="20221207 08:33:56.529" endtime="20221207 08:33:56.529"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${setupTeardown}[browser]</arg>
 <arg>executable_path=driver\geckodriver.exe</arg>
 <arg>service_log_path=${{os.path.devnull}}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221206 13:54:11.177" level="INFO">Opening browser 'Firefox' to base url 'None'.</msg>
-<msg timestamp="20221206 13:54:11.178" level="INFO">Browser driver log file created to: C:\Users\aandre\Desktop\trainPrestashop\nul</msg>
-<status status="PASS" starttime="20221206 13:54:11.176" endtime="20221206 13:54:16.370"/>
+<msg timestamp="20221207 08:33:56.531" level="INFO">Opening browser 'Firefox' to base url 'None'.</msg>
+<msg timestamp="20221207 08:33:56.532" level="INFO">Browser driver log file created to: C:\Users\aandre\Desktop\trainPrestashop\nul</msg>
+<status status="PASS" starttime="20221207 08:33:56.529" endtime="20221207 08:34:02.169"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${setupTeardown}[url]</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20221206 13:54:16.372" level="INFO">Opening url 'https://sut-test-adrian.squashcloud.io/'</msg>
-<status status="PASS" starttime="20221206 13:54:16.371" endtime="20221206 13:54:16.867"/>
+<msg timestamp="20221207 08:34:02.170" level="INFO">Opening url 'https://sut-test-adrian.squashcloud.io/'</msg>
+<status status="PASS" starttime="20221207 08:34:02.169" endtime="20221207 08:34:02.960"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221206 13:54:16.867" endtime="20221206 13:54:17.134"/>
+<status status="PASS" starttime="20221207 08:34:02.961" endtime="20221207 08:34:03.223"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:11.172" endtime="20221206 13:54:17.135"/>
+<status status="PASS" starttime="20221207 08:33:56.526" endtime="20221207 08:34:03.223"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:11.167" endtime="20221206 13:54:17.135"/>
+<status status="PASS" starttime="20221207 08:33:56.521" endtime="20221207 08:34:03.224"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>$__TEST_2_SETUP is not None</arg>
 <arg>${__TEST_2_SETUP}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20221206 13:54:17.135" endtime="20221206 13:54:17.136"/>
+<status status="PASS" starttime="20221207 08:34:03.224" endtime="20221207 08:34:03.225"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:11.162" endtime="20221206 13:54:17.137"/>
+<status status="PASS" starttime="20221207 08:33:56.517" endtime="20221207 08:34:03.225"/>
 </kw>
-<kw name="Given je suis sur la page d'accueil" library="login">
+<kw name="Given je suis sur la page d'accueil" library="steplogin">
 <kw name="Check home page" library="home">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${homeLocator}[title]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221206 13:54:17.180" level="INFO">Element '//h1/a[@href="https://sut-test-adrian.squashcloud.io/"]' is displayed.</msg>
-<status status="PASS" starttime="20221206 13:54:17.140" endtime="20221206 13:54:17.180"/>
+<msg timestamp="20221207 08:34:03.311" level="INFO">Element '//h1/a[@href="https://sut-test-adrian.squashcloud.io/"]' is displayed.</msg>
+<status status="PASS" starttime="20221207 08:34:03.227" endtime="20221207 08:34:03.312"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.139" endtime="20221206 13:54:17.181"/>
+<status status="PASS" starttime="20221207 08:34:03.227" endtime="20221207 08:34:03.312"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.139" endtime="20221206 13:54:17.181"/>
+<status status="PASS" starttime="20221207 08:34:03.226" endtime="20221207 08:34:03.313"/>
 </kw>
-<kw name="When Je clique sur le bouton de connexion" library="login">
+<kw name="When Je clique sur le bouton de connexion" library="steplogin">
 <kw name="Click button connexion home" library="home">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${homeLocator}[connectbuttonHome]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221206 13:54:17.185" level="INFO">Clicking element '//span[.="Connexion"]'.</msg>
-<status status="PASS" starttime="20221206 13:54:17.184" endtime="20221206 13:54:17.500"/>
+<msg timestamp="20221207 08:34:03.316" level="INFO">Clicking element '//span[.="Connexion"]'.</msg>
+<status status="PASS" starttime="20221207 08:34:03.315" endtime="20221207 08:34:03.658"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.182" endtime="20221206 13:54:17.501"/>
+<status status="PASS" starttime="20221207 08:34:03.314" endtime="20221207 08:34:03.659"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.181" endtime="20221206 13:54:17.502"/>
+<status status="PASS" starttime="20221207 08:34:03.313" endtime="20221207 08:34:03.659"/>
 </kw>
-<kw name="Then Une page de connexion s'ouvre avec un champ E-mail , Mot de passe ,un lien Mot de passe oublié ? , un bouton connexion et un lien Pas de compte ? Créez-en un" library="login">
+<kw name="Then Une page de connexion s'ouvre avec un champ E-mail , Mot de passe ,un lien Mot de passe oublié ? , un bouton connexion et un lien Pas de compte ? Créez-en un" library="steplogin">
 <kw name="Check forgotPwdLink" library="login">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${loginLocator}[forgotPwdLink]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221206 13:54:17.529" level="INFO">Element '//a[@href="https://sut-test-adrian.squashcloud.io/recuperation-mot-de-passe"]' is displayed.</msg>
-<status status="PASS" starttime="20221206 13:54:17.505" endtime="20221206 13:54:17.529"/>
+<msg timestamp="20221207 08:34:03.683" level="INFO">Element '//a[@href="https://sut-test-adrian.squashcloud.io/recuperation-mot-de-passe"]' is displayed.</msg>
+<status status="PASS" starttime="20221207 08:34:03.661" endtime="20221207 08:34:03.684"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.505" endtime="20221206 13:54:17.530"/>
+<status status="PASS" starttime="20221207 08:34:03.661" endtime="20221207 08:34:03.684"/>
 </kw>
 <kw name="Check no accountLink" library="login">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${loginLocator}[noAccountLink]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221206 13:54:17.548" level="INFO">Element '//a[@href="https://sut-test-adrian.squashcloud.io/index.php?controller=registration"]/parent::div[@class="no-account"]' is displayed.</msg>
-<status status="PASS" starttime="20221206 13:54:17.530" endtime="20221206 13:54:17.549"/>
+<msg timestamp="20221207 08:34:03.709" level="INFO">Element '//a[@href="https://sut-test-adrian.squashcloud.io/index.php?controller=registration"]/parent::div[@class="no-account"]' is displayed.</msg>
+<status status="PASS" starttime="20221207 08:34:03.685" endtime="20221207 08:34:03.710"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.530" endtime="20221206 13:54:17.549"/>
+<status status="PASS" starttime="20221207 08:34:03.685" endtime="20221207 08:34:03.710"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.504" endtime="20221206 13:54:17.550"/>
+<status status="PASS" starttime="20221207 08:34:03.660" endtime="20221207 08:34:03.710"/>
 </kw>
-<kw name="When Je rempli les champs E-mail : ${login} et Mot de passe : ${mdp}" library="login" sourcename="Je rempli les champs E-mail : ${login} et Mot de passe : ${mdp}">
+<kw name="When Je rempli les champs E-mail : ${login} et Mot de passe : ${mdp}" library="steplogin" sourcename="Je rempli les champs E-mail : ${login} et Mot de passe : ${mdp}">
 <kw name="Set email" library="login">
 <arg>toto@aol.com</arg>
 <doc>It's used to input text and clear email field</doc>
@@ -117,10 +117,10 @@
 <arg>${login}</arg>
 <arg>clear=True</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221206 13:54:17.554" level="INFO">Typing text 'toto@aol.com' into text field '//input[@id="field-email"]'.</msg>
-<status status="PASS" starttime="20221206 13:54:17.554" endtime="20221206 13:54:17.610"/>
+<msg timestamp="20221207 08:34:03.713" level="INFO">Typing text 'toto@aol.com' into text field '//input[@id="field-email"]'.</msg>
+<status status="PASS" starttime="20221207 08:34:03.712" endtime="20221207 08:34:03.757"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.553" endtime="20221206 13:54:17.610"/>
+<status status="PASS" starttime="20221207 08:34:03.712" endtime="20221207 08:34:03.758"/>
 </kw>
 <kw name="Set pwd" library="login">
 <arg>Totototo!</arg>
@@ -130,34 +130,34 @@
 <arg>${pwd}</arg>
 <arg>clear=True</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221206 13:54:17.612" level="INFO">Typing text 'Totototo!' into text field '//input[@id="field-password"]'.</msg>
-<status status="PASS" starttime="20221206 13:54:17.611" endtime="20221206 13:54:17.642"/>
+<msg timestamp="20221207 08:34:03.760" level="INFO">Typing text 'Totototo!' into text field '//input[@id="field-password"]'.</msg>
+<status status="PASS" starttime="20221207 08:34:03.759" endtime="20221207 08:34:03.782"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.611" endtime="20221206 13:54:17.642"/>
+<status status="PASS" starttime="20221207 08:34:03.758" endtime="20221207 08:34:03.783"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.552" endtime="20221206 13:54:17.642"/>
+<status status="PASS" starttime="20221207 08:34:03.711" endtime="20221207 08:34:03.783"/>
 </kw>
-<kw name="And Je clique sur le bouton connexion de la fenêtre connexion" library="login">
+<kw name="And Je clique sur le bouton connexion de la fenêtre connexion" library="steplogin">
 <kw name="Click button Connexion" library="login">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${loginLocator}[buttonConnexion]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221206 13:54:17.645" level="INFO">Clicking button '//button[@id="submit-login"]'.</msg>
-<status status="PASS" starttime="20221206 13:54:17.645" endtime="20221206 13:54:18.130"/>
+<msg timestamp="20221207 08:34:03.785" level="INFO">Clicking button '//button[@id="submit-login"]'.</msg>
+<status status="PASS" starttime="20221207 08:34:03.785" endtime="20221207 08:34:04.336"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.644" endtime="20221206 13:54:18.130"/>
+<status status="PASS" starttime="20221207 08:34:03.785" endtime="20221207 08:34:04.336"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:17.643" endtime="20221206 13:54:18.130"/>
+<status status="PASS" starttime="20221207 08:34:03.784" endtime="20221207 08:34:04.337"/>
 </kw>
-<kw name="Then Je suis redirigé vers l'accueil avec mon Nom et Prénom et une bouton Déconnexion dans le coin supérieur droit" library="login">
+<kw name="Then Je suis redirigé vers l'accueil avec mon Nom et Prénom et une bouton Déconnexion dans le coin supérieur droit" library="steplogin">
 <kw name="Check home page" library="home">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${homeLocator}[title]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221206 13:54:18.159" level="INFO">Element '//h1/a[@href="https://sut-test-adrian.squashcloud.io/"]' is displayed.</msg>
-<status status="PASS" starttime="20221206 13:54:18.133" endtime="20221206 13:54:18.159"/>
+<msg timestamp="20221207 08:34:04.364" level="INFO">Element '//h1/a[@href="https://sut-test-adrian.squashcloud.io/"]' is displayed.</msg>
+<status status="PASS" starttime="20221207 08:34:04.340" endtime="20221207 08:34:04.365"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:18.132" endtime="20221206 13:54:18.159"/>
+<status status="PASS" starttime="20221207 08:34:04.339" endtime="20221207 08:34:04.365"/>
 </kw>
 <kw name="Check name home" library="home">
 <arg>test</arg>
@@ -167,54 +167,54 @@
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//input[.="${name} ${lastname}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221206 13:54:20.297" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="logScreenshot/selenium-screenshot-2.png"&gt;&lt;img src="logScreenshot/selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221206 13:54:20.298" level="FAIL">Element with locator '//input[.="test Coucou"]' not found.</msg>
-<status status="FAIL" starttime="20221206 13:54:18.160" endtime="20221206 13:54:20.301"/>
+<msg timestamp="20221207 08:34:06.488" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="logScreenshot/selenium-screenshot-3.png"&gt;&lt;img src="logScreenshot/selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221207 08:34:06.489" level="FAIL">Element with locator '//input[.="test Coucou"]' not found.</msg>
+<status status="FAIL" starttime="20221207 08:34:04.366" endtime="20221207 08:34:06.492"/>
 </kw>
-<status status="FAIL" starttime="20221206 13:54:18.160" endtime="20221206 13:54:20.301"/>
+<status status="FAIL" starttime="20221207 08:34:04.366" endtime="20221207 08:34:06.492"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Log" library="BuiltIn">
 <arg>votre WebElement n'existe pas mais j'ai une solution pour vous</arg>
 <arg>level=INFO</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221206 13:54:20.303" level="INFO">votre WebElement n'existe pas mais j'ai une solution pour vous</msg>
-<status status="PASS" starttime="20221206 13:54:20.302" endtime="20221206 13:54:20.303"/>
+<msg timestamp="20221207 08:34:06.493" level="INFO">votre WebElement n'existe pas mais j'ai une solution pour vous</msg>
+<status status="PASS" starttime="20221207 08:34:06.492" endtime="20221207 08:34:06.493"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:20.301" endtime="20221206 13:54:20.303"/>
+<status status="PASS" starttime="20221207 08:34:06.492" endtime="20221207 08:34:06.493"/>
 </branch>
-<status status="PASS" starttime="20221206 13:54:18.160" endtime="20221206 13:54:20.303"/>
+<status status="PASS" starttime="20221207 08:34:04.366" endtime="20221207 08:34:06.493"/>
 </try>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//span[.="${name} ${lastname}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221206 13:54:20.318" level="INFO">Element '//span[.="test Coucou"]' is displayed.</msg>
-<status status="PASS" starttime="20221206 13:54:20.304" endtime="20221206 13:54:20.318"/>
+<msg timestamp="20221207 08:34:06.508" level="INFO">Element '//span[.="test Coucou"]' is displayed.</msg>
+<status status="PASS" starttime="20221207 08:34:06.493" endtime="20221207 08:34:06.508"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:18.159" endtime="20221206 13:54:20.318"/>
+<status status="PASS" starttime="20221207 08:34:04.365" endtime="20221207 08:34:06.508"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:18.131" endtime="20221206 13:54:20.319"/>
+<status status="PASS" starttime="20221207 08:34:04.337" endtime="20221207 08:34:06.509"/>
 </kw>
 <kw name="Test Teardown" type="TEARDOWN">
 <kw name="Get Variable Value" library="BuiltIn">
 <var>${__TEST_2_TEARDOWN}</var>
 <arg>${TEST 2 TEARDOWN}</arg>
 <doc>Returns variable value or ``default`` if the variable does not exist.</doc>
-<msg timestamp="20221206 13:54:20.324" level="INFO">${__TEST_2_TEARDOWN} = None</msg>
-<status status="PASS" starttime="20221206 13:54:20.320" endtime="20221206 13:54:20.324"/>
+<msg timestamp="20221207 08:34:06.512" level="INFO">${__TEST_2_TEARDOWN} = None</msg>
+<status status="PASS" starttime="20221207 08:34:06.510" endtime="20221207 08:34:06.512"/>
 </kw>
 <kw name="Get Variable Value" library="BuiltIn">
 <var>${__TEST_TEARDOWN}</var>
 <arg>${TEST TEARDOWN}</arg>
 <doc>Returns variable value or ``default`` if the variable does not exist.</doc>
-<msg timestamp="20221206 13:54:20.325" level="INFO">${__TEST_TEARDOWN} = Teardown</msg>
-<status status="PASS" starttime="20221206 13:54:20.324" endtime="20221206 13:54:20.325"/>
+<msg timestamp="20221207 08:34:06.513" level="INFO">${__TEST_TEARDOWN} = Teardown</msg>
+<status status="PASS" starttime="20221207 08:34:06.512" endtime="20221207 08:34:06.513"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>$__TEST_2_TEARDOWN is not None</arg>
 <arg>${__TEST_2_TEARDOWN}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20221206 13:54:20.326" endtime="20221206 13:54:20.326"/>
+<status status="PASS" starttime="20221207 08:34:06.513" endtime="20221207 08:34:06.513"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>$__TEST_TEARDOWN is not None</arg>
@@ -223,17 +223,17 @@
 <kw name="Teardown" library="setupTeardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221206 13:54:20.328" endtime="20221206 13:54:23.261"/>
+<status status="PASS" starttime="20221207 08:34:06.515" endtime="20221207 08:34:09.331"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:20.327" endtime="20221206 13:54:23.262"/>
+<status status="PASS" starttime="20221207 08:34:06.515" endtime="20221207 08:34:09.332"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:20.327" endtime="20221206 13:54:23.263"/>
+<status status="PASS" starttime="20221207 08:34:06.514" endtime="20221207 08:34:09.332"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:20.320" endtime="20221206 13:54:23.264"/>
+<status status="PASS" starttime="20221207 08:34:06.509" endtime="20221207 08:34:09.333"/>
 </kw>
-<status status="PASS" starttime="20221206 13:54:11.161" endtime="20221206 13:54:23.266"/>
+<status status="PASS" starttime="20221207 08:33:56.515" endtime="20221207 08:34:09.335"/>
 </test>
-<status status="PASS" starttime="20221206 13:54:10.700" endtime="20221206 13:54:23.271"/>
+<status status="PASS" starttime="20221207 08:33:55.043" endtime="20221207 08:34:09.340"/>
 </suite>
 <statistics>
 <total>
@@ -246,7 +246,7 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221206 13:54:11.154" level="ERROR">Error in file 'c:\Users\aandre\Desktop\trainPrestashop\tests\connectdisconnect\test de connexion et déconnexion ko.robot' on line 3: Importing library 'squash_tf.TFParamService' failed: ModuleNotFoundError: No module named 'squash_tf'
+<msg timestamp="20221207 08:33:56.504" level="ERROR">Error in file 'c:\Users\aandre\Desktop\trainPrestashop\tests\connectdisconnect\test de connexion et déconnexion ko.robot' on line 3: Importing library 'squash_tf.TFParamService' failed: ModuleNotFoundError: No module named 'squash_tf'
 Traceback (most recent call last):
   None
 PYTHONPATH:
