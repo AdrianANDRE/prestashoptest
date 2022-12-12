@@ -1,6 +1,7 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    Browser
+Library    RPA.Browser
 *** Keywords ***
 Take screenshot custom
     [Arguments]    ${namescreenshot}
-    Capture Page Screenshot    filename=logScreenshot/${namescreenshot}.jpg
+    Screenshot    filename=logScreenshot/${namescreenshot}.jpg
