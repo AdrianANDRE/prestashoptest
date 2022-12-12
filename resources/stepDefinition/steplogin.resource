@@ -1,7 +1,7 @@
 *** Settings ***
-Library    SeleniumLibrary
 Resource    ../../resources/pageObjects/home.resource
 Resource    ../../resources/pageObjects/login.resource
+Resource    ../helpers/Screenshot.resource
 
 *** Keywords ***
 
@@ -30,3 +30,4 @@ Je me connecte avec le login : "toto@aol.com" , mdp : "Totototo!"
 Je suis redirigé sur la page d'accueil , et le prénom nom : "test Coucou" est afficher sur la page
     Check home page
     Check name home    test    Coucou
+    Take screenshot custom    loginScreen

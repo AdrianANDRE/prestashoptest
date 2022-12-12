@@ -1,18 +1,15 @@
 *** Settings ***
 Documentation    Setup and teardown to execute every test run
-Library    SeleniumLibrary
+Library    Browser
 
 *** Variables ***
 &{setupTeardown}    url=https://sut-test-adrian.squashcloud.io/
-...    browser=Firefox
+...    browser=firefox
 ${TEST SETUP}    Setup
 ${TEST TEARDOWN}    Teardown
 *** Keywords ***
 Setup
-    Set Selenium Implicit Wait    2 seconds
-    Set Screenshot Directory    logScreenshot
-    Open Browser    browser=${setupTeardown}[browser]    executable_path=driver\geckodriver.exe    service_log_path=${{os.path.devnull}}
-    Go To    ${setupTeardown}[url]
-    Maximize Browser Window
+    New Browser    ${setupTeardown}[browser]    headless=false
+    New Page    url=${setupTeardown}[url]
 Teardown
-    Close Browser
+    Browser.Close Browser

@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Page object of the login page
-Library    SeleniumLibrary
+Library    Browser
 
 *** Variables ***
 &{loginLocator}    emailField=//input[@id="field-email"]
@@ -13,15 +13,15 @@ Library    SeleniumLibrary
 Set email
     [Arguments]    ${login}
     [Documentation]    It's used to input text and clear email field
-    Input Text    ${loginLocator}[emailField]    ${login}    clear=True
+    Fill Text    ${loginLocator}[emailField]    ${login}
 Set pwd
     [Arguments]    ${pwd}
     [Documentation]    It's used to input pwd and clear pwd field
-    Input Text    ${loginLocator}[pwdField]    ${pwd}    clear=True
+    Fill Text    ${loginLocator}[pwdField]    ${pwd}
 Check forgotPwdLink
-    Element Should Be Visible    ${loginLocator}[forgotPwdLink]
+    Get Element    ${loginLocator}[forgotPwdLink]
 Check no accountLink
-    Element Should Be Visible    ${loginLocator}[noAccountLink]
+    Get Element    ${loginLocator}[noAccountLink]
 Click button Connexion
-    Click Button    ${loginLocator}[buttonConnexion]
+    Click    ${loginLocator}[buttonConnexion]
 
