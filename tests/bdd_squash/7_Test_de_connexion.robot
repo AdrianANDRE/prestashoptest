@@ -2,6 +2,7 @@
 # Test case importance: Low
 *** Settings ***
 Resource	squash_resources.resource
+Library		squash_tf.TFParamService
 
 *** Keywords ***
 Test Setup
@@ -18,10 +19,13 @@ Test Teardown
 
 *** Test Cases ***
 Test de connexion
+	${message} =	Get Test Param	DS_message
+
 	[Setup]	Test Setup
 
 	Given je suis sur la page d'accueil
 	When Je me connecte avec le login : "toto@aol.com" , mdp : "Totototo!"
 	Then Je suis redirigé sur la page d'accueil , et le prénom nom : "test Coucou" est afficher sur la page
+	Then test des JDD ${message}
 
 	[Teardown]	Test Teardown
