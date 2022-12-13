@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20221212 14:40:25.742" rpa="false" schemaversion="3">
-<suite id="s1" name="Test De Connexion Et Déconnexion Ko" source="c:\Users\aandre\Desktop\DepotGit\trainPrestashop\tests\connectdisconnect\test de connexion et déconnexion ko.robot">
-<test id="s1-t1" name="Test de connexion et déconnexion KO" line="23">
-<kw name="Test Setup" type="SETUP">
-<kw name="Get Variable Value" library="BuiltIn">
-<var>${__TEST_SETUP}</var>
-<arg>${TEST SETUP}</arg>
-<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
-<msg timestamp="20221212 14:40:27.188" level="INFO">${__TEST_SETUP} = Setup</msg>
-<status status="PASS" starttime="20221212 14:40:27.188" endtime="20221212 14:40:27.189"/>
-</kw>
-<kw name="Get Variable Value" library="BuiltIn">
-<var>${__TEST_2_SETUP}</var>
-<arg>${TEST 2 SETUP}</arg>
-<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
-<msg timestamp="20221212 14:40:27.193" level="INFO">${__TEST_2_SETUP} = None</msg>
-<status status="PASS" starttime="20221212 14:40:27.190" endtime="20221212 14:40:27.193"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>$__TEST_SETUP is not None</arg>
-<arg>${__TEST_SETUP}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20221213 16:34:18.294" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="c:\Users\aandre\Desktop\DepotGit\trainPrestashop\tests\connectdisconnect\test.robot">
+<test id="s1-t1" name="Testing" line="9">
 <kw name="Setup" library="setupTeardown">
 <kw name="New Browser" library="Browser">
 <arg>${setupTeardown}[browser]</arg>
@@ -28,225 +9,348 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20221212 14:40:27.200" level="INFO">{"browser": "firefox", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\aandre\\Desktop\\DepotGit\\trainPrestashop\\browser\\traces\\98a5307c-5a4a-4890-aa89-87fa9d618f26"}</msg>
-<msg timestamp="20221212 14:40:28.172" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\aandre\\Desktop\\DepotGit\\trainPrestashop\\browser\\traces\\98a5307c-5a4a-4890-aa89-87fa9d618f26"}</msg>
-<status status="PASS" starttime="20221212 14:40:27.199" endtime="20221212 14:40:28.173"/>
+<msg timestamp="20221213 16:34:19.379" level="INFO">{"browser": "firefox", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\aandre\\Desktop\\DepotGit\\trainPrestashop\\browser\\traces\\3cc0e1b6-64b1-469b-8465-e3435f34db5a"}</msg>
+<msg timestamp="20221213 16:34:20.310" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\aandre\\Desktop\\DepotGit\\trainPrestashop\\browser\\traces\\3cc0e1b6-64b1-469b-8465-e3435f34db5a"}</msg>
+<status status="PASS" starttime="20221213 16:34:19.378" endtime="20221213 16:34:20.311"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>url=${setupTeardown}[url]</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20221212 14:40:31.605" level="INFO">Successfully initialized new page object and opened url: https://sut-test-adrian.squashcloud.io/</msg>
-<msg timestamp="20221212 14:40:31.605" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20221212 14:40:28.173" endtime="20221212 14:40:31.606"/>
+<msg timestamp="20221213 16:34:22.227" level="INFO">Successfully initialized new page object and opened url: https://sut-test-adrian.squashcloud.io/</msg>
+<msg timestamp="20221213 16:34:22.228" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20221213 16:34:20.311" endtime="20221213 16:34:22.228"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:27.199" endtime="20221212 14:40:31.606"/>
+<status status="PASS" starttime="20221213 16:34:19.378" endtime="20221213 16:34:22.228"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:27.193" endtime="20221212 14:40:31.607"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>$__TEST_2_SETUP is not None</arg>
-<arg>${__TEST_2_SETUP}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20221212 14:40:31.607" endtime="20221212 14:40:31.608"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:27.187" endtime="20221212 14:40:31.609"/>
-</kw>
-<kw name="Given je suis sur la page d'accueil" library="steplogin">
-<kw name="Check home page" library="home">
-<kw name="Get Element" library="Browser">
-<arg>${homeLocator}[title]</arg>
-<tag>Getter</tag>
+<kw name="i add &quot;2&quot; random articles in the cart" library="cartManagment">
+<kw name="Go to clothes" library="header">
+<kw name="Wait For Elements State" library="Browser">
+<arg>${headerLocator}[buttonClothes]</arg>
+<arg>visible</arg>
 <tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20221212 14:40:31.730" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20221212 14:40:31.612" endtime="20221212 14:40:31.731"/>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20221213 16:34:22.342" level="INFO">Waited for Element with selector //a[@href="https://sut-test-adrian.squashcloud.io/3-vetements"] at state visible</msg>
+<status status="PASS" starttime="20221213 16:34:22.233" endtime="20221213 16:34:22.343"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:31.611" endtime="20221212 14:40:31.731"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:31.610" endtime="20221212 14:40:31.731"/>
-</kw>
-<kw name="When Je clique sur le bouton de connexion" library="steplogin">
-<kw name="Click button connexion home" library="home">
 <kw name="Click" library="Browser">
-<arg>${homeLocator}[connectbuttonHome]</arg>
+<arg>${headerLocator}[buttonClothes]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221212 14:40:31.735" endtime="20221212 14:40:32.022"/>
+<status status="PASS" starttime="20221213 16:34:22.343" endtime="20221213 16:34:22.577"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:31.734" endtime="20221212 14:40:32.023"/>
+<status status="PASS" starttime="20221213 16:34:22.231" endtime="20221213 16:34:22.577"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:31.733" endtime="20221212 14:40:32.023"/>
-</kw>
-<kw name="Then Une page de connexion s'ouvre avec un champ E-mail , Mot de passe ,un lien Mot de passe oublié ? , un bouton connexion et un lien Pas de compte ? Créez-en un" library="steplogin">
-<kw name="Check forgotPwdLink" library="login">
-<kw name="Get Element" library="Browser">
-<arg>${loginLocator}[forgotPwdLink]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20221212 14:40:32.238" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20221212 14:40:32.027" endtime="20221212 14:40:32.239"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:32.026" endtime="20221212 14:40:32.239"/>
-</kw>
-<kw name="Check no accountLink" library="login">
-<kw name="Get Element" library="Browser">
-<arg>${loginLocator}[noAccountLink]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20221212 14:40:32.303" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20221212 14:40:32.240" endtime="20221212 14:40:32.304"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:32.240" endtime="20221212 14:40:32.305"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:32.025" endtime="20221212 14:40:32.306"/>
-</kw>
-<kw name="When Je rempli les champs E-mail : ${login} et Mot de passe : ${mdp}" library="steplogin" sourcename="Je rempli les champs E-mail : ${login} et Mot de passe : ${mdp}">
-<kw name="Set email" library="login">
-<arg>toto@aol.com</arg>
-<doc>It's used to input text and clear email field</doc>
-<kw name="Fill Text" library="Browser">
-<arg>${loginLocator}[emailField]</arg>
-<arg>${login}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221212 14:40:32.309" level="INFO">Fills the text 'toto@aol.com' in the given field.</msg>
-<status status="PASS" starttime="20221212 14:40:32.309" endtime="20221212 14:40:32.351"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:32.308" endtime="20221212 14:40:32.351"/>
-</kw>
-<kw name="Set pwd" library="login">
-<arg>Totototo!</arg>
-<doc>It's used to input pwd and clear pwd field</doc>
-<kw name="Fill Text" library="Browser">
-<arg>${loginLocator}[pwdField]</arg>
-<arg>${pwd}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20221212 14:40:32.356" level="INFO">Fills the text 'Totototo!' in the given field.</msg>
-<status status="PASS" starttime="20221212 14:40:32.353" endtime="20221212 14:40:32.391"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:32.352" endtime="20221212 14:40:32.392"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:32.307" endtime="20221212 14:40:32.393"/>
-</kw>
-<kw name="And Je clique sur le bouton connexion de la fenêtre connexion" library="steplogin">
-<kw name="Click button Connexion" library="login">
+<kw name="Choose cloth article" library="clothes">
+<arg>T-shirt imprimé colibri</arg>
 <kw name="Click" library="Browser">
-<arg>${loginLocator}[buttonConnexion]</arg>
+<arg>xpath=//a[.="${choice}"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20221212 14:40:32.395" endtime="20221212 14:40:32.797"/>
+<status status="PASS" starttime="20221213 16:34:22.578" endtime="20221213 16:34:23.023"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:32.394" endtime="20221212 14:40:32.798"/>
+<status status="PASS" starttime="20221213 16:34:22.577" endtime="20221213 16:34:23.023"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:32.394" endtime="20221212 14:40:32.798"/>
-</kw>
-<kw name="Then Je suis redirigé vers l'accueil avec mon Nom et Prénom et une bouton Déconnexion dans le coin supérieur droit" library="steplogin">
-<kw name="Check home page" library="home">
-<kw name="Get Element" library="Browser">
-<arg>${homeLocator}[title]</arg>
-<tag>Getter</tag>
+<kw name="Add to cart" library="article">
+<kw name="Click" library="Browser">
+<arg>${articleLocator}[addtocart]</arg>
 <tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20221212 14:40:32.996" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20221212 14:40:32.801" endtime="20221212 14:40:32.996"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:32.800" endtime="20221212 14:40:32.996"/>
-</kw>
-<kw name="Check name home" library="home">
-<arg>test</arg>
-<arg>Coucou</arg>
-<try>
-<branch type="TRY">
-<kw name="Get Element" library="Browser">
-<arg>//input[.="${name} ${lastname}"]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20221212 14:40:43.124" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221212 14:40:43.125" level="FAIL">TimeoutError: locator.elementHandle: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "//input[.="test Coucou"]"
-============================================================
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
-<status status="FAIL" starttime="20221212 14:40:32.998" endtime="20221212 14:40:43.128"/>
-</kw>
-<status status="FAIL" starttime="20221212 14:40:32.998" endtime="20221212 14:40:43.129"/>
-</branch>
-<branch type="EXCEPT">
-<kw name="Log" library="BuiltIn">
-<arg>votre WebElement n'existe pas mais j'ai une solution pour vous</arg>
-<arg>level=INFO</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221212 14:40:43.129" level="INFO">votre WebElement n'existe pas mais j'ai une solution pour vous</msg>
-<status status="PASS" starttime="20221212 14:40:43.129" endtime="20221212 14:40:43.130"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:43.129" endtime="20221212 14:40:43.130"/>
-</branch>
-<status status="PASS" starttime="20221212 14:40:32.997" endtime="20221212 14:40:43.130"/>
-</try>
-<kw name="Get Element" library="Browser">
-<arg>//span[.="${name} ${lastname}"]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20221212 14:40:43.160" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20221212 14:40:43.130" endtime="20221212 14:40:43.160"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:32.997" endtime="20221212 14:40:43.161"/>
-</kw>
-<status status="PASS" starttime="20221212 14:40:32.799" endtime="20221212 14:40:43.161"/>
-</kw>
-<kw name="Test Teardown" type="TEARDOWN">
-<kw name="Get Variable Value" library="BuiltIn">
-<var>${__TEST_2_TEARDOWN}</var>
-<arg>${TEST 2 TEARDOWN}</arg>
-<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
-<msg timestamp="20221212 14:40:43.165" level="INFO">${__TEST_2_TEARDOWN} = None</msg>
-<status status="PASS" starttime="20221212 14:40:43.163" endtime="20221212 14:40:43.165"/>
-</kw>
-<kw name="Get Variable Value" library="BuiltIn">
-<var>${__TEST_TEARDOWN}</var>
-<arg>${TEST TEARDOWN}</arg>
-<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
-<msg timestamp="20221212 14:40:43.167" level="INFO">${__TEST_TEARDOWN} = Teardown</msg>
-<status status="PASS" starttime="20221212 14:40:43.166" endtime="20221212 14:40:43.168"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>$__TEST_2_TEARDOWN is not None</arg>
-<arg>${__TEST_2_TEARDOWN}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20221212 14:40:43.168" endtime="20221212 14:40:43.169"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>$__TEST_TEARDOWN is not None</arg>
-<arg>${__TEST_TEARDOWN}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Teardown" library="setupTeardown">
-<kw name="Close Browser" library="Browser">
-<tag>BrowserControl</tag>
 <tag>Setter</tag>
-<doc>Closes the current browser.</doc>
-<msg timestamp="20221212 14:40:43.804" level="INFO">Closed browser</msg>
-<status status="PASS" starttime="20221212 14:40:43.172" endtime="20221212 14:40:43.804"/>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221213 16:34:23.024" endtime="20221213 16:34:23.355"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:43.171" endtime="20221212 14:40:43.805"/>
+<kw name="Click" library="Browser">
+<arg>${articleLocator}[continuemyshop]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221213 16:34:23.355" endtime="20221213 16:34:24.190"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:43.170" endtime="20221212 14:40:43.805"/>
+<status status="PASS" starttime="20221213 16:34:23.024" endtime="20221213 16:34:24.190"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:43.162" endtime="20221212 14:40:43.806"/>
+<kw name="Return home" library="header">
+<kw name="Wait For Elements State" library="Browser">
+<arg>${headerLocator}[homebutton]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20221213 16:34:24.204" level="INFO">Waited for Element with selector //div[@id="_desktop_logo"] at state visible</msg>
+<status status="PASS" starttime="20221213 16:34:24.191" endtime="20221213 16:34:24.204"/>
 </kw>
-<status status="PASS" starttime="20221212 14:40:27.183" endtime="20221212 14:40:43.806"/>
+<kw name="Click" library="Browser">
+<arg>${headerLocator}[homebutton]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221213 16:34:24.204" endtime="20221213 16:34:24.717"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:24.190" endtime="20221213 16:34:24.718"/>
+</kw>
+<kw name="Go to clothes" library="header">
+<kw name="Wait For Elements State" library="Browser">
+<arg>${headerLocator}[buttonClothes]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20221213 16:34:24.845" level="INFO">Waited for Element with selector //a[@href="https://sut-test-adrian.squashcloud.io/3-vetements"] at state visible</msg>
+<status status="PASS" starttime="20221213 16:34:24.719" endtime="20221213 16:34:24.845"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${headerLocator}[buttonClothes]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221213 16:34:24.846" endtime="20221213 16:34:25.166"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:24.718" endtime="20221213 16:34:25.167"/>
+</kw>
+<kw name="Choose cloth article" library="clothes">
+<arg>Pull imprimé colibri</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//a[.="${choice}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221213 16:34:25.170" endtime="20221213 16:34:25.587"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:25.168" endtime="20221213 16:34:25.587"/>
+</kw>
+<kw name="Add to cart" library="article">
+<kw name="Click" library="Browser">
+<arg>${articleLocator}[addtocart]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221213 16:34:25.588" endtime="20221213 16:34:25.850"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${articleLocator}[continuemyshop]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221213 16:34:25.851" endtime="20221213 16:34:26.687"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:25.588" endtime="20221213 16:34:26.687"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:22.230" endtime="20221213 16:34:26.688"/>
+</kw>
+<kw name="Go to cart" library="header">
+<kw name="Wait For Elements State" library="Browser">
+<arg>${headerLocator}[cartbutton]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20221213 16:34:26.701" level="INFO">Waited for Element with selector //span[.="Panier"] at state visible</msg>
+<status status="PASS" starttime="20221213 16:34:26.689" endtime="20221213 16:34:26.702"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${headerLocator}[cartbutton]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20221213 16:34:26.702" endtime="20221213 16:34:27.216"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:26.688" endtime="20221213 16:34:27.217"/>
+</kw>
+<kw name="test int" library="header">
+<kw name="Set Variable" library="BuiltIn">
+<var>${totalprice}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20221213 16:34:27.219" level="INFO">${totalprice} = 0</msg>
+<status status="PASS" starttime="20221213 16:34:27.219" endtime="20221213 16:34:27.219"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>@{webelement}</var>
+<arg>${headerLocator}[price]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20221213 16:34:27.427" level="INFO">Found 2 Locators successfully.</msg>
+<msg timestamp="20221213 16:34:27.428" level="INFO">@{webelement} = [ element=7475b3b6-2183-452d-be4c-59709591f3bd | element=6f74add9-4a2b-4fd8-823e-f200ebd187ea ]</msg>
+<status status="PASS" starttime="20221213 16:34:27.220" endtime="20221213 16:34:27.428"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{listprice}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221213 16:34:27.430" level="INFO">@{listprice} = [ ]</msg>
+<status status="PASS" starttime="20221213 16:34:27.429" endtime="20221213 16:34:27.430"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{webelement}</value>
+<iter>
+<var name="${element}">element=7475b3b6-2183-452d-be4c-59709591f3bd</var>
+<kw name="Convert price to number" library="convertprice">
+<var>${int}</var>
+<arg>${element}</arg>
+<kw name="Get Text" library="Browser">
+<var>${price}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20221213 16:34:27.478" level="INFO">${price} = 22,94 €</msg>
+<status status="PASS" starttime="20221213 16:34:27.433" endtime="20221213 16:34:27.479"/>
+</kw>
+<kw name="Remove String Using Regexp" library="String">
+<var>${nodevise}</var>
+<arg>${price}</arg>
+<arg>([^0-9.,])</arg>
+<doc>Removes ``patterns`` from the given ``string``.</doc>
+<msg timestamp="20221213 16:34:27.482" level="INFO">${nodevise} = 22,94</msg>
+<status status="PASS" starttime="20221213 16:34:27.480" endtime="20221213 16:34:27.482"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${convert}</var>
+<arg>${nodevise}</arg>
+<arg>,</arg>
+<arg>.</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20221213 16:34:27.483" level="INFO">${convert} = 22.94</msg>
+<status status="PASS" starttime="20221213 16:34:27.482" endtime="20221213 16:34:27.483"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${int}</var>
+<arg>${convert}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20221213 16:34:27.484" level="INFO">${int} = 22.94</msg>
+<status status="PASS" starttime="20221213 16:34:27.483" endtime="20221213 16:34:27.484"/>
+</kw>
+<msg timestamp="20221213 16:34:27.484" level="INFO">${int} = 22.94</msg>
+<status status="PASS" starttime="20221213 16:34:27.432" endtime="20221213 16:34:27.484"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${listprice}</arg>
+<arg>${int}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20221213 16:34:27.484" endtime="20221213 16:34:27.485"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:27.432" endtime="20221213 16:34:27.485"/>
+</iter>
+<iter>
+<var name="${element}">element=6f74add9-4a2b-4fd8-823e-f200ebd187ea</var>
+<kw name="Convert price to number" library="convertprice">
+<var>${int}</var>
+<arg>${element}</arg>
+<kw name="Get Text" library="Browser">
+<var>${price}</var>
+<arg>${element}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20221213 16:34:27.521" level="INFO">${price} = 34,46 €</msg>
+<status status="PASS" starttime="20221213 16:34:27.486" endtime="20221213 16:34:27.521"/>
+</kw>
+<kw name="Remove String Using Regexp" library="String">
+<var>${nodevise}</var>
+<arg>${price}</arg>
+<arg>([^0-9.,])</arg>
+<doc>Removes ``patterns`` from the given ``string``.</doc>
+<msg timestamp="20221213 16:34:27.522" level="INFO">${nodevise} = 34,46</msg>
+<status status="PASS" starttime="20221213 16:34:27.521" endtime="20221213 16:34:27.522"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${convert}</var>
+<arg>${nodevise}</arg>
+<arg>,</arg>
+<arg>.</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20221213 16:34:27.523" level="INFO">${convert} = 34.46</msg>
+<status status="PASS" starttime="20221213 16:34:27.522" endtime="20221213 16:34:27.523"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${int}</var>
+<arg>${convert}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20221213 16:34:27.523" level="INFO">${int} = 34.46</msg>
+<status status="PASS" starttime="20221213 16:34:27.523" endtime="20221213 16:34:27.524"/>
+</kw>
+<msg timestamp="20221213 16:34:27.524" level="INFO">${int} = 34.46</msg>
+<status status="PASS" starttime="20221213 16:34:27.485" endtime="20221213 16:34:27.524"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${listprice}</arg>
+<arg>${int}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20221213 16:34:27.524" endtime="20221213 16:34:27.525"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:27.485" endtime="20221213 16:34:27.525"/>
+</iter>
+<status status="PASS" starttime="20221213 16:34:27.431" endtime="20221213 16:34:27.525"/>
+</for>
+<for flavor="IN">
+<var>${price}</var>
+<value>@{listprice}</value>
+<iter>
+<var name="${price}">22.94</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${totalprice}</var>
+<arg>round(${price}+${totalprice},2)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20221213 16:34:27.526" level="INFO">${totalprice} = 22.94</msg>
+<status status="PASS" starttime="20221213 16:34:27.526" endtime="20221213 16:34:27.526"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:27.525" endtime="20221213 16:34:27.527"/>
+</iter>
+<iter>
+<var name="${price}">34.46</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${totalprice}</var>
+<arg>round(${price}+${totalprice},2)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20221213 16:34:27.527" level="INFO">${totalprice} = 57.4</msg>
+<status status="PASS" starttime="20221213 16:34:27.527" endtime="20221213 16:34:27.528"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:27.527" endtime="20221213 16:34:27.528"/>
+</iter>
+<status status="PASS" starttime="20221213 16:34:27.525" endtime="20221213 16:34:27.528"/>
+</for>
+<kw name="Convert number to price" library="convertprice">
+<var>${totalpricestring}</var>
+<arg>${totalprice}</arg>
+<kw name="Convert To String" library="BuiltIn">
+<var>${stringprice}</var>
+<arg>${price}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20221213 16:34:27.530" level="INFO">${stringprice} = 57.4</msg>
+<status status="PASS" starttime="20221213 16:34:27.529" endtime="20221213 16:34:27.530"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${result}</var>
+<arg>${stringprice}</arg>
+<arg>.</arg>
+<arg>,</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20221213 16:34:27.531" level="INFO">${result} = 57,4</msg>
+<status status="PASS" starttime="20221213 16:34:27.530" endtime="20221213 16:34:27.531"/>
+</kw>
+<msg timestamp="20221213 16:34:27.532" level="INFO">${totalpricestring} = 57,4</msg>
+<status status="PASS" starttime="20221213 16:34:27.528" endtime="20221213 16:34:27.532"/>
+</kw>
+<kw name="Get Element" library="Browser">
+<arg>xpath=//div[@id="cart-subtotal-products"]//span[contains(text(),"${totalpricestring}")]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<msg timestamp="20221213 16:34:27.546" level="INFO">Locator found successfully.</msg>
+<status status="PASS" starttime="20221213 16:34:27.532" endtime="20221213 16:34:27.547"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:27.218" endtime="20221213 16:34:27.548"/>
+</kw>
+<status status="PASS" starttime="20221213 16:34:19.374" endtime="20221213 16:34:27.549"/>
 </test>
-<status status="PASS" starttime="20221212 14:40:25.751" endtime="20221212 14:40:43.811"/>
+<status status="PASS" starttime="20221213 16:34:18.301" endtime="20221213 16:34:27.610"/>
 </suite>
 <statistics>
 <total>
@@ -255,27 +359,9 @@ Tip: Use "Set Browser Timeout" for increasing the timeout or double check your l
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test De Connexion Et Déconnexion Ko">Test De Connexion Et Déconnexion Ko</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221212 14:40:26.623" level="ERROR">Error in file 'c:\Users\aandre\Desktop\DepotGit\trainPrestashop\tests\connectdisconnect\test de connexion et déconnexion ko.robot' on line 3: Importing library 'squash_tf.TFParamService' failed: ModuleNotFoundError: No module named 'squash_tf'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  c:\Users\aandre\Desktop\DepotGit\trainPrestashop
-  c:\Users\aandre\.vscode\extensions\robocorp.robotframework-lsp-1.6.0\src\robotframework_debug_adapter
-  c:\Users\aandre\Desktop\DepotGit\trainPrestashop
-  c:\Users\aandre\.vscode\extensions\robocorp.robotframework-lsp-1.6.0\src
-  c:\Users\aandre\.vscode\extensions\robocorp.robotframework-lsp-1.6.0\src\robotframework_ls\vendored
-  c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16\python39.zip
-  c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16\DLLs
-  c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16\lib
-  c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16
-  c:\ProgramData\robocorp\ht
-  c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16\lib\site-packages
-  c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16\lib\site-packages\win32
-  c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16\lib\site-packages\win32\lib
-  c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16\lib\site-packages\Pythonwin</msg>
 </errors>
 </robot>

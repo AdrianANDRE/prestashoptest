@@ -1,64 +1,96 @@
-{"level":30,"time":"2022-12-12T13:40:27.106Z","pid":2552,"hostname":"NXQLX146","msg":"Listening on 65118"}
-{"level":30,"time":"2022-12-12T13:40:27.181Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-12-12T13:40:27.181Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-12-12T13:40:27.185Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-12-12T13:40:27.185Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-12-12T13:40:27.202Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2022-12-12T13:40:28.169Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method newBrowser"}
-{"level":30,"time":"2022-12-12T13:40:28.177Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method newPage"}
-{"level":30,"time":"2022-12-12T13:40:28.177Z","pid":2552,"hostname":"NXQLX146","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-12-12T13:40:28.246Z","pid":2552,"hostname":"NXQLX146","msg":"Changed active context"}
-{"level":30,"time":"2022-12-12T13:40:29.517Z","pid":2552,"hostname":"NXQLX146","msg":"Video path: undefined"}
-{"level":30,"time":"2022-12-12T13:40:29.517Z","pid":2552,"hostname":"NXQLX146","msg":"Changed active page"}
-{"level":30,"time":"2022-12-12T13:40:31.601Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method newPage"}
-{"level":30,"time":"2022-12-12T13:40:31.614Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:31.614Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //h1/a[@href=\"https://sut-test-adrian.squashcloud.io/\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:31.728Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:31.738Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method click"}
-{"level":30,"time":"2022-12-12T13:40:31.738Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //span[.=\"Connexion\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:32.020Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method click"}
-{"level":30,"time":"2022-12-12T13:40:32.028Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:32.028Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //a[@href=\"https://sut-test-adrian.squashcloud.io/recuperation-mot-de-passe\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:32.235Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:32.242Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:32.243Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //a[@href=\"https://sut-test-adrian.squashcloud.io/index.php?controller=registration\"]/parent::div[@class=\"no-account\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:32.301Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:32.310Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method fillText"}
-{"level":30,"time":"2022-12-12T13:40:32.310Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //input[@id=\"field-email\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:32.349Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method fillText"}
-{"level":30,"time":"2022-12-12T13:40:32.358Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method fillText"}
-{"level":30,"time":"2022-12-12T13:40:32.358Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //input[@id=\"field-password\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:32.389Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method fillText"}
-{"level":30,"time":"2022-12-12T13:40:32.396Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method click"}
-{"level":30,"time":"2022-12-12T13:40:32.396Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //button[@id=\"submit-login\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:32.796Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method click"}
-{"level":30,"time":"2022-12-12T13:40:32.802Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:32.802Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //h1/a[@href=\"https://sut-test-adrian.squashcloud.io/\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:32.994Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:32.999Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:32.999Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //input[.=\"test Coucou\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:43.008Z","pid":2552,"hostname":"NXQLX146","msg":"Error of node method  getElement"}
-================= Original suppressed error =================
-locator.elementHandle: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "//input[.="test Coucou"]"
-============================================================
-    at getElement (c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16\lib\site-packages\Browser\wrapper\index.js:6985:17)
-    at async PlaywrightServer.getElement (c:\ProgramData\robocorp\ht\74b117d_b1f3c24_6cd60f16\lib\site-packages\Browser\wrapper\index.js:8477:28) {
-  name: 'TimeoutError'
-}
-=============================================================
-{"level":30,"time":"2022-12-12T13:40:43.020Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2022-12-12T13:40:43.122Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2022-12-12T13:40:43.132Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:43.132Z","pid":2552,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //span[.=\"test Coucou\"] in page."}
-{"level":30,"time":"2022-12-12T13:40:43.158Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method getElement"}
-{"level":30,"time":"2022-12-12T13:40:43.174Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2022-12-12T13:40:43.187Z","pid":2552,"hostname":"NXQLX146","msg":"Removed page=03c6ae7e-3f74-4d9d-bedf-a92af8d5f96b from context=054c66ad-5ae6-42a5-acb3-3ace275efbe6 page stack"}
-{"level":30,"time":"2022-12-12T13:40:43.802Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method closeBrowser"}
-{"level":30,"time":"2022-12-12T13:40:43.807Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-12-12T13:40:43.808Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-12-12T13:40:43.813Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2022-12-12T13:40:43.814Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2022-12-12T13:40:45.868Z","pid":2552,"hostname":"NXQLX146","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2022-12-12T13:40:45.868Z","pid":2552,"hostname":"NXQLX146","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2022-12-13T15:34:19.262Z","pid":5864,"hostname":"NXQLX146","msg":"Listening on 64643"}
+{"level":30,"time":"2022-12-13T15:34:19.371Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:19.371Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:19.375Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:19.375Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:19.382Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2022-12-13T15:34:20.307Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method newBrowser"}
+{"level":30,"time":"2022-12-13T15:34:20.313Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-12-13T15:34:20.314Z","pid":5864,"hostname":"NXQLX146","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-12-13T15:34:20.381Z","pid":5864,"hostname":"NXQLX146","msg":"Changed active context"}
+{"level":30,"time":"2022-12-13T15:34:21.478Z","pid":5864,"hostname":"NXQLX146","msg":"Video path: undefined"}
+{"level":30,"time":"2022-12-13T15:34:21.478Z","pid":5864,"hostname":"NXQLX146","msg":"Changed active page"}
+{"level":30,"time":"2022-12-13T15:34:22.225Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method newPage"}
+{"level":30,"time":"2022-12-13T15:34:22.235Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-12-13T15:34:22.236Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //a[@href=\"https://sut-test-adrian.squashcloud.io/3-vetements\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:22.340Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-12-13T15:34:22.345Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:22.345Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //a[@href=\"https://sut-test-adrian.squashcloud.io/3-vetements\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:22.575Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:22.579Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:22.579Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with xpath=//a[.=\"T-shirt imprimé colibri\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:23.021Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:23.026Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:23.026Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //button[@class=\"btn btn-primary add-to-cart\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:23.353Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:23.356Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:23.356Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //button[@class=\"btn btn-secondary\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:24.187Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:24.191Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-12-13T15:34:24.191Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //div[@id=\"_desktop_logo\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:24.201Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-12-13T15:34:24.204Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:24.205Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //div[@id=\"_desktop_logo\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:24.715Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:24.720Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-12-13T15:34:24.720Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //a[@href=\"https://sut-test-adrian.squashcloud.io/3-vetements\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:24.843Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-12-13T15:34:24.849Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:24.849Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //a[@href=\"https://sut-test-adrian.squashcloud.io/3-vetements\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:25.163Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:25.171Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:25.172Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with xpath=//a[.=\"Pull imprimé colibri\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:25.585Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:25.589Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:25.589Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //button[@class=\"btn btn-primary add-to-cart\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:25.847Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:25.851Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:25.852Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //button[@class=\"btn btn-secondary\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:26.685Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:26.689Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2022-12-13T15:34:26.689Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //span[.=\"Panier\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:26.700Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2022-12-13T15:34:26.703Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method click"}
+{"level":30,"time":"2022-12-13T15:34:26.703Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with //span[.=\"Panier\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:27.213Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method click"}
+{"level":30,"time":"2022-12-13T15:34:27.220Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method getElements"}
+{"level":30,"time":"2022-12-13T15:34:27.220Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is disabled, return Locator: //div[@class=\"col-md-6 col-xs-2 price\"] in page."}
+{"level":30,"time":"2022-12-13T15:34:27.221Z","pid":5864,"hostname":"NXQLX146","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2022-12-13T15:34:27.426Z","pid":5864,"hostname":"NXQLX146","msg":"Found 2 elements."}
+{"level":30,"time":"2022-12-13T15:34:27.426Z","pid":5864,"hostname":"NXQLX146","msg":"Find 0 Locator in page."}
+{"level":30,"time":"2022-12-13T15:34:27.426Z","pid":5864,"hostname":"NXQLX146","msg":"Find 1 Locator in page."}
+{"level":30,"time":"2022-12-13T15:34:27.426Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method getElements"}
+{"level":30,"time":"2022-12-13T15:34:27.434Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method getText"}
+{"level":30,"time":"2022-12-13T15:34:27.435Z","pid":5864,"hostname":"NXQLX146","msg":"element=7475b3b6-2183-452d-be4c-59709591f3bd selector parsed without children"}
+{"level":30,"time":"2022-12-13T15:34:27.435Z","pid":5864,"hostname":"NXQLX146","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2022-12-13T15:34:27.477Z","pid":5864,"hostname":"NXQLX146","msg":"Retrieved text for element element=7475b3b6-2183-452d-be4c-59709591f3bd containing 22,94 €"}
+{"level":30,"time":"2022-12-13T15:34:27.477Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method getText"}
+{"level":30,"time":"2022-12-13T15:34:27.487Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method getText"}
+{"level":30,"time":"2022-12-13T15:34:27.487Z","pid":5864,"hostname":"NXQLX146","msg":"element=6f74add9-4a2b-4fd8-823e-f200ebd187ea selector parsed without children"}
+{"level":30,"time":"2022-12-13T15:34:27.487Z","pid":5864,"hostname":"NXQLX146","msg":"Only locator handle defined, return cached Locator."}
+{"level":30,"time":"2022-12-13T15:34:27.519Z","pid":5864,"hostname":"NXQLX146","msg":"Retrieved text for element element=6f74add9-4a2b-4fd8-823e-f200ebd187ea containing 34,46 €"}
+{"level":30,"time":"2022-12-13T15:34:27.519Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method getText"}
+{"level":30,"time":"2022-12-13T15:34:27.533Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method getElement"}
+{"level":30,"time":"2022-12-13T15:34:27.533Z","pid":5864,"hostname":"NXQLX146","msg":"Strict mode is enabled, find Locator with xpath=//div[@id=\"cart-subtotal-products\"]//span[contains(text(),\"57,4\")] in page."}
+{"level":30,"time":"2022-12-13T15:34:27.544Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method getElement"}
+{"level":30,"time":"2022-12-13T15:34:27.550Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:27.552Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:27.554Z","pid":5864,"hostname":"NXQLX146","msg":"Changed active context"}
+{"level":30,"time":"2022-12-13T15:34:27.554Z","pid":5864,"hostname":"NXQLX146","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-13T15:34:27.555Z","pid":5864,"hostname":"NXQLX146","msg":"Changed active page"}
+{"level":30,"time":"2022-12-13T15:34:27.557Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:27.559Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:27.561Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-13T15:34:27.561Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-13T15:34:27.563Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-12-13T15:34:27.564Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-12-13T15:34:27.567Z","pid":5864,"hostname":"NXQLX146","msg":"Changed active context"}
+{"level":30,"time":"2022-12-13T15:34:27.567Z","pid":5864,"hostname":"NXQLX146","msg":"Changing current active page"}
+{"level":30,"time":"2022-12-13T15:34:27.567Z","pid":5864,"hostname":"NXQLX146","msg":"Changed active page"}
+{"level":30,"time":"2022-12-13T15:34:27.570Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-12-13T15:34:27.580Z","pid":5864,"hostname":"NXQLX146","msg":"Removed page=d4bf0b02-565c-4c8f-b6da-7108a7f47170 from context=43f4ea35-ed53-49cb-a0a3-fba94741d0ea page stack"}
+{"level":30,"time":"2022-12-13T15:34:27.594Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-12-13T15:34:27.617Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:27.617Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-12-13T15:34:29.709Z","pid":5864,"hostname":"NXQLX146","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2022-12-13T15:34:30.171Z","pid":5864,"hostname":"NXQLX146","msg":"End of node method closeAllBrowsers"}
