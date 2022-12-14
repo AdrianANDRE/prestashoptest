@@ -19,6 +19,17 @@ Test Teardown
 
 *** Test Cases ***
 Place an order with 2 article , log on user : "user" $$
+	${alias} =	Get Test Param	DS_alias
+	${company} =	Get Test Param	DS_company
+	${tva} =	Get Test Param	DS_tva
+	${adress} =	Get Test Param	DS_adress
+	${supp} =	Get Test Param	DS_supp
+	${zip} =	Get Test Param	DS_zip
+	${city} =	Get Test Param	DS_city
+	${country} =	Get Test Param	DS_country
+	${phone} =	Get Test Param	DS_phone
+	${paymode} =	Get Test Param	DS_paymode
+	
 	[Setup]	Test Setup
 
 	Given i'm log as user : "coucou"
