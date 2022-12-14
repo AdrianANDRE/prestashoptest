@@ -14,4 +14,7 @@ i add "2" random articles in the cart
     Choose cloth article    T-shirt imprimé colibri
     Add to cart
 There is those "2" articles in the cart with the correct total price
-    
+    Go to cart
+    Check cart article    Pull imprimé colibri
+    Check cart article    T-shirt imprimé colibri
+    Check price cart

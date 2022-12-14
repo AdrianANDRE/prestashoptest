@@ -12,7 +12,7 @@ Resource    ../helpers/convertprice.resource
 ...    homebutton=//div[@id="_desktop_logo"]
 ...    buttonClothes=//a[@href="https://sut-test-adrian.squashcloud.io/3-vetements"]
 ...    price=//div[@class="col-md-6 col-xs-2 price"]
-
+...    accountbutton=//a[@class="account"]//span
 
 *** Keywords ***
 Login
@@ -24,9 +24,8 @@ Check name
     Wait For Elements State    xpath=//span[.="${name} ${lastname}"]    visible
     Get Element    xpath=//span[.="${name} ${lastname}"]    #To check if your connected to the right account
 Go to account
-    [Arguments]    ${name}    ${lastname}
-    Wait For Elements State    xpath=//span[.="${name} ${lastname}"]    visible
-    Click    xpath=//span[.="${name} ${lastname}"]     #To go to the account page
+    Wait For Elements State    ${headerLocator}[accountbutton]    visible
+    Click    ${headerLocator}[accountbutton]     #To go to the account page
 Go to clothes
     Wait For Elements State    ${headerLocator}[buttonClothes]    visible
     Click    ${headerLocator}[buttonClothes]    
@@ -37,7 +36,7 @@ Go to cart
     Wait For Elements State    ${headerLocator}[cartbutton]    visible
     Click    ${headerLocator}[cartbutton]
 
-Check price carty
+Check price cart
     ${totalprice}    Set Variable    0
     @{webelement}    Get Elements    ${headerLocator}[price]
     @{listprice}    Create List    

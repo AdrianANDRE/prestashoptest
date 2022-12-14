@@ -2,6 +2,7 @@
 # Test case importance: High
 *** Settings ***
 Resource	squash_resources.resource
+Library		squash_tf.TFParamService
 
 *** Keywords ***
 Test Setup

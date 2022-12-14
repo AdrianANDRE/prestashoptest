@@ -15,5 +15,6 @@ dependencies:
       # Define pip packages here -> https://pypi.org/
       - rpaframework==17.4.0    # https://rpaframework.org/releasenotes.html
       - robotframework-browser==13.6.0
+      - squash-tf-services==1.0.0
 rccPostInstall:
   - rfbrowser init
