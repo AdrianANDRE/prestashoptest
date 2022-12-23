@@ -5,6 +5,8 @@ Resource    ../../resources/setupTeardown.resource
 Resource    ../../resources/pageObjects/header.resource
 Resource    ../../resources/stepDefinition/cartManagment.resource
 Resource    ../../resources/stepDefinition/orderManagment.resource
+Test Setup    ${TEST 8 TEARDOWN}
+Test Teardown    Teardown
 
 *** Variables ***
 ${alias}    alias
@@ -19,7 +21,7 @@ ${phone}    0616061606
 ${paymode}    Click and collect
 *** Test Cases ***
 Testing
-    Setup
+    [Setup]    ${TEST SETUP}
     i'm log as user : "coucou"
 	i add "2" random articles in the cart
 	There is those "2" articles in the cart with the correct total price
