@@ -9,13 +9,14 @@ Resource    pageObjects/account.resource
 ...    browser=firefox    
 ${TEST SETUP}    Setup
 ${TEST TEARDOWN}    Teardown
-${TEST 8 TEARDOWN}    Teardown 8
 *** Keywords ***
 Setup
     New Browser    ${setupTeardown}[browser]    headless=false
     New Context    locale=-FR
     New Page    url=${setupTeardown}[url]
 Teardown
+    Go to account
+    Delete adress
     Browser.Close Browser
 Teardown 8
     Go to account
